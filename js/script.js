@@ -1,4 +1,4 @@
-const listoftext = ["Skidding since 2019.", "Making cheats since 2022.", "Proud owner of Astrid Chairs", "Astrid on top!", "Buy Astrid today."];
+const listoftext = ["Skidding since 2019.", "Making cheats since 2022.", "Proud owner of NexusFN", "Nexus on top!", "Join Nexus today."];
 const typedText = document.getElementById("typed-text");
 const backgroundMusic = document.getElementById("background-music");
 const acceptButton = document.getElementById("accept-button");

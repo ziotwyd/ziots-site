@@ -66,7 +66,7 @@ window.addEventListener("load", function () {
     }
   });
 });
-function notification(_0x5d9e88, _0x3411f4) {
+/*function notification(_0x5d9e88, _0x3411f4) {
   const _0x3c58d2 = document.getElementById("notification-container");
   const _0x117e20 = document.createElement("div");
   _0x117e20.classList.add("notification-box");
@@ -89,6 +89,6 @@ function notification(_0x5d9e88, _0x3411f4) {
       _0x117e20.remove();
     });
   }, _0x5d9e88);
-}
+}*/
 
 

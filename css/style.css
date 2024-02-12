@@ -15,6 +15,11 @@ body {
 	user-select: none; /* Disable text selection */
   }
 
+#wobbleText {
+  height: 50px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
 .loading-screen {
 	position: fixed;
 	top: 0;

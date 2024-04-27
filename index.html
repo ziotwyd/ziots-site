@@ -78,6 +78,19 @@
       cursor: pointer;
     }
 
+      #visit-container {
+          display: flex;
+          align-items: center;
+      }
+
+      #visits-img {
+          width: 25px;
+          height: 20px;
+         
+          margin-right: 5px; /* Adjust margin as needed */
+      }
+
+
     body {
   margin-top: 20px; /* Adjust as needed */
 }
@@ -85,205 +98,233 @@
 </head>
 <body>
 
-<!-- Add this div to your HTML body -->
-<!-- div class="watermark">ziot</div> -->
+    <!-- Add this div to your HTML body -->
+    <!-- div class="watermark">ziot</div> -->
 
-  <div class="snow-container"></div>
-  <div class="notification-container" id="notification-container"></div>
-  <div class="loading-screen"></div>
-  <div class="popup-overlay" id="popup">
-    <div class="popup-box">
-      <h2 class="popup-title">welcome to ziots hideout</h2>
-      <div id="popup-content" class="popup-content">
-        <p>
-          Interested in joining the best OG Fortnite server? <a id="onehack" href="https://discord.gg/FyeFDup7T8">Join the Discord!</a>
-        </p>
-      </div>
-      <div class="popup-accept">
-        <p id="accept-text"></p>
-        <button id="accept-button">continue</button>
-      </div>
+    <div class="snow-container"></div>
+    <div class="notification-container" id="notification-container"></div>
+    <div class="loading-screen"></div>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <h2 class="popup-title">welcome to ziots hideout</h2>
+            <div id="popup-content" class="popup-content">
+                <p>
+                    Interested in joining the best OG Fortnite server? <a id="onehack" href="https://discord.gg/FyeFDup7T8">Join the Discord!</a>
+                </p>
+            </div>
+            <div class="popup-accept">
+                <p id="accept-text"></p>
+                <button id="accept-button">continue</button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="header-container animate-header">
-    <h1 class="header-text">ziot</h1>
-</div>
-
-  <div class="container">
-      <p id="example1"><span id="typed-text"></span><span id="cursor">|</span></p>
+    <div class="header-container animate-header">
+        <h1 class="header-text">ziot</h1>
     </div>
+
+
+
+    <div class="container">
+        <p id="example1"><span id="typed-text"></span><span id="cursor">|</span></p>
+    </div>
+
+    <div id="visit-container">
+        <img src="images/visits.png" alt="Visits" id="visits-img">
+        <span id="visit-count">Loading...</span>
+    </div>
+
+
     <div class="icon-buttons">
-      <a href="https://www.youtube.com/channel/UCYs-DLpKDiv-kqmGTz4JI3Q"><img src="images/yt.png" alt="YouTube"></a>
-      <a href="https://discord.gg/FyeFDup7T8"><img src="images/discord.png" alt="Discord"></a>
+        <a href="https://www.youtube.com/channel/UCYs-DLpKDiv-kqmGTz4JI3Q"><img src="images/yt.png" alt="YouTube"></a>
+        <a href="https://discord.gg/FyeFDup7T8"><img src="images/discord.png" alt="Discord"></a>
     </div>
     <p>Founder of NostalgX | C++ Developer </p>
-  </div>
+    </div>
 
-<div class="d-flex flex-column align-items-center justify-content-center min-vh-100">
-    <div class="container text-center mt-5">
-        <div class="row my-4">
-            <!-- First button -->
-            <div class="col">
-                <div class="button-container" style="background-color: rgb(44, 44, 44); padding: 20px; border-radius: 10px; margin: 0 20px;">
-                    <h3 class="button-title center">Sub to my Youtube :) </h3>
-                    <p class="button-description center">Interested in supporting me? Please consider subscribing to me if you enjoy my content! </p>
-                    <img src="images/channels4_profile.jpg" alt="Button Image" class="button-image img-fluid mt-2 clickable-image">
-                    <div class="button-buttons mt-2">
-                        <button class="btn btn-secondary" onclick="window.location.href='https://www.youtube.com/channel/UCYs-DLpKDiv-kqmGTz4JI3Q'">Visit</button>
+    <div class="d-flex flex-column align-items-center justify-content-center min-vh-100">
+        <div class="container text-center mt-5">
+            <div class="row my-4">
+                <!-- First button -->
+                <div class="col">
+                    <div class="button-container" style="background-color: rgb(44, 44, 44); padding: 20px; border-radius: 10px; margin: 0 20px;">
+                        <h3 class="button-title center">Sub to my Youtube :) </h3>
+                        <p class="button-description center">Interested in supporting me? Please consider subscribing to me if you enjoy my content! </p>
+                        <img src="images/channels4_profile.jpg" alt="Button Image" class="button-image img-fluid mt-2 clickable-image">
+                        <div class="button-buttons mt-2">
+                            <button class="btn btn-secondary" onclick="window.location.href='https://www.youtube.com/channel/UCYs-DLpKDiv-kqmGTz4JI3Q'">Visit</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Second button -->
-            <div class="col">
-                <div class="button-container" style="background-color: rgb(44, 44, 44); padding: 20px; border-radius: 10px; margin: 0 20px;">
-                    <h3 class="button-title center">NostalgX OGFN</h3>
-                    <p class="button-description center">#1 OGFN Project in the community! Join today to experience TRUE Nostalgia!</p>
-                    <img src="images/nostalgx.png" alt="Button Image" class="button-image img-fluid mt-2 clickable-image">
-                    <div class="button-buttons mt-2">
-                        <button class="btn btn-secondary" onclick="window.location.href='https://discord.gg/FyeFDup7T8'">Learn more</button>
+                <!-- Second button -->
+                <div class="col">
+                    <div class="button-container" style="background-color: rgb(44, 44, 44); padding: 20px; border-radius: 10px; margin: 0 20px;">
+                        <h3 class="button-title center">NostalgX OGFN</h3>
+                        <p class="button-description center">#1 OGFN Project in the community! Join today to experience TRUE Nostalgia!</p>
+                        <img src="images/nostalgx.png" alt="Button Image" class="button-image img-fluid mt-2 clickable-image">
+                        <div class="button-buttons mt-2">
+                            <button class="btn btn-secondary" onclick="window.location.href='https://discord.gg/FyeFDup7T8'">Learn more</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Third button -->
-             <div class="col">
-                <div class="button-container" style="background-color: rgb(44, 44, 44); padding: 20px; border-radius: 10px; margin: 0 20px;">
-                    <h3 class="button-title center">Interested in contacting me? </h3>
-                    <p class="button-description center">For any business inquiries please contact me via Discord. </p>
-                   <img src="images/channels4_profile.jpg" alt="Button Image" class="button-image img-fluid mt-2 clickable-image">
-                    <div class="button-buttons mt-2">
-                        <button class="btn btn-secondary" onclick="window.location.href='https://www.discord.com/users/690204153427001380'">Contact me!</button>
+                <!-- Third button -->
+                <div class="col">
+                    <div class="button-container" style="background-color: rgb(44, 44, 44); padding: 20px; border-radius: 10px; margin: 0 20px;">
+                        <h3 class="button-title center">Interested in contacting me? </h3>
+                        <p class="button-description center">For any business inquiries please contact me via Discord. </p>
+                        <img src="images/channels4_profile.jpg" alt="Button Image" class="button-image img-fluid mt-2 clickable-image">
+                        <div class="button-buttons mt-2">
+                            <button class="btn btn-secondary" onclick="window.location.href='https://www.discord.com/users/690204153427001380'">Contact me!</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
-  <audio style="display: none;" id="background-music" autoplay="" loop="" onplaying="">
-    <source id="music" src="media/[SPOTIFY-DOWNLOADER.COM] Moonlit.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
+    <audio style="display: none;" id="background-music" autoplay="" loop="" onplaying="">
+        <source id="music" src="media/[SPOTIFY-DOWNLOADER.COM] Moonlit.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
-  <div class="report-button-container">
-    <button id="report-button" class="report-button"></button>
-  </div>
-  
-  <div class="custom-popup-container" id="custom-popup-container">
-    <div class="custom-popup-box">
-      <button class="popup-close" id="close-button">X</button>
-      <h2 class="popup-title">Describe your issue:</h2>
-      <div class="popup-content">
-        <textarea id="issue-description" rows="16"></textarea>
-      </div>
-      <button id="send-button">Send</button>
+    <div class="report-button-container">
+        <button id="report-button" class="report-button"></button>
     </div>
-  </div>
-  <script>
-    document.addEventListener('contextmenu', function (e) {
-      e.preventDefault(); // Prevent right-click menu
-    });
-  </script>
-  <script src="js/script.js"></script>
-  <script>(function(){var js = "window['__CF$cv$params']={r:'82bedb53cac90c74',t:'MTcwMDk2NzM3MS4wMTYwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script>
 
-  <script>
-const wobbleContainer = document.getElementById('wobbleText');
-const headerText = document.querySelector('.header-text');
+    <div class="custom-popup-container" id="custom-popup-container">
+        <div class="custom-popup-box">
+            <button class="popup-close" id="close-button">X</button>
+            <h2 class="popup-title">Describe your issue:</h2>
+            <div class="popup-content">
+                <textarea id="issue-description" rows="16"></textarea>
+            </div>
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault(); // Prevent right-click menu
+        });
+    </script>
+    <script src="js/script.js"></script>
+    <script>(function () { var js = "window['__CF$cv$params']={r:'82bedb53cac90c74',t:'MTcwMDk2NzM3MS4wMTYwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
 
-let startTime;
-let currentWobblePhase;
+    <script>
+        const wobbleContainer = document.getElementById('wobbleText');
+        const headerText = document.querySelector('.header-text');
 
-const wobblePhases = [
-  { duration: 4000, distance: 15, rotationX: 15, rotationY: 10 },
-  { duration: 5000, distance: 20, rotationX: -10, rotationY: 20 },
-  { duration: 6000, distance: 25, rotationX: 17, rotationY: -15 },
-  { duration: 7000, distance: 30, rotationX: -13, rotationY: 25 },
-  { duration: 8000, distance: 25, rotationX: 20, rotationY: -15 },
-  { duration: 9000, distance: 20, rotationX: -20, rotationY: 23 },
-];
+        let startTime;
+        let currentWobblePhase;
 
-function getRandomWobblePhase() {
-  return wobblePhases[Math.floor(Math.random() * wobblePhases.length)];
-}
+        const wobblePhases = [
+            { duration: 4000, distance: 15, rotationX: 15, rotationY: 10 },
+            { duration: 5000, distance: 20, rotationX: -10, rotationY: 20 },
+            { duration: 6000, distance: 25, rotationX: 17, rotationY: -15 },
+            { duration: 7000, distance: 30, rotationX: -13, rotationY: 25 },
+            { duration: 8000, distance: 25, rotationX: 20, rotationY: -15 },
+            { duration: 9000, distance: 20, rotationX: -20, rotationY: 23 },
+        ];
 
-function wobble(timestamp) {
-  if (!startTime) {
-    startTime = timestamp;
-    currentWobblePhase = getRandomWobblePhase();
-  }
-
-  const progress = (timestamp - startTime) / currentWobblePhase.duration;
-  const yOffset = Math.sin(progress * Math.PI) * currentWobblePhase.distance;
-  const rotationX = yOffset / currentWobblePhase.rotationX;
-  const rotationY = yOffset / currentWobblePhase.rotationY;
-
-  wobbleContainer.style.transform = `translateY(${yOffset}px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
-  headerText.style.transform = `translateY(0) rotateX(0deg) rotateY(0deg)`; // Keep text centered and without wobble
-
-  if (progress < 1) {
-    requestAnimationFrame(wobble);
-  } else {
-    startTime = null; // Reset start time for the next cycle
-    currentWobblePhase = getRandomWobblePhase();
-    requestAnimationFrame(wobble);
-  }
-}
-
-requestAnimationFrame(wobble);
-
-  </script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const astridExternalButton = document.getElementById('astridExternalButton');
-    const astridChairsButton = document.getElementById('astridChairsButton');
-  
-    astridExternalButton.addEventListener('click', function () {
-      window.location.href = 'https://discord.gg/astrid-chairs';
-    });
-  
-    astridChairsButton.addEventListener('click', function () {
-      window.location.href = 'https://discord.gg/astrid-chairs';
-    });
-  });
-  </script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const snowContainer = document.querySelector('.snow-container');
-
-    function createSnowflake() {
-      const snowflake = document.createElement('div');
-      snowflake.className = 'snowflake';
-      snowflake.style.left = Math.random() * window.innerWidth + 'px';
-      snowflake.style.animationDuration = Math.random() * 3000 + 3000 + 'ms'; // Vary the duration for a more natural look
-      snowContainer.appendChild(snowflake);
-
-      // Animate snowflake falling
-      const animation = snowflake.animate(
-        [
-          { transform: 'translateY(0)' },
-          { transform: 'translateY(' + window.innerHeight + 'px)' }
-        ],
-        {
-          duration: parseFloat(snowflake.style.animationDuration),
-          iterations: Infinity,
-          easing: 'linear'
+        function getRandomWobblePhase() {
+            return wobblePhases[Math.floor(Math.random() * wobblePhases.length)];
         }
-      );
 
-      // Remove snowflake when animation ends (avoid memory leaks)
-      animation.onfinish = function () {
-        snowContainer.removeChild(snowflake);
-      };
-    }
+        function wobble(timestamp) {
+            if (!startTime) {
+                startTime = timestamp;
+                currentWobblePhase = getRandomWobblePhase();
+            }
 
-    // Create snowflakes at intervals
-    setInterval(createSnowflake, 500);
-  });
-</script>
+            const progress = (timestamp - startTime) / currentWobblePhase.duration;
+            const yOffset = Math.sin(progress * Math.PI) * currentWobblePhase.distance;
+            const rotationX = yOffset / currentWobblePhase.rotationX;
+            const rotationY = yOffset / currentWobblePhase.rotationY;
+
+            wobbleContainer.style.transform = `translateY(${yOffset}px) rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+            headerText.style.transform = `translateY(0) rotateX(0deg) rotateY(0deg)`; // Keep text centered and without wobble
+
+            if (progress < 1) {
+                requestAnimationFrame(wobble);
+            } else {
+                startTime = null; // Reset start time for the next cycle
+                currentWobblePhase = getRandomWobblePhase();
+                requestAnimationFrame(wobble);
+            }
+        }
+
+        requestAnimationFrame(wobble);
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const astridExternalButton = document.getElementById('astridExternalButton');
+            const astridChairsButton = document.getElementById('astridChairsButton');
+
+            astridExternalButton.addEventListener('click', function () {
+                window.location.href = 'https://discord.gg/astrid-chairs';
+            });
+
+            astridChairsButton.addEventListener('click', function () {
+                window.location.href = 'https://discord.gg/astrid-chairs';
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const snowContainer = document.querySelector('.snow-container');
+
+            function createSnowflake() {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.style.left = Math.random() * window.innerWidth + 'px';
+                snowflake.style.animationDuration = Math.random() * 3000 + 3000 + 'ms'; // Vary the duration for a more natural look
+                snowContainer.appendChild(snowflake);
+
+                // Animate snowflake falling
+                const animation = snowflake.animate(
+                    [
+                        { transform: 'translateY(0)' },
+                        { transform: 'translateY(' + window.innerHeight + 'px)' }
+                    ],
+                    {
+                        duration: parseFloat(snowflake.style.animationDuration),
+                        iterations: Infinity,
+                        easing: 'linear'
+                    }
+                );
+
+                // Remove snowflake when animation ends (avoid memory leaks)
+                animation.onfinish = function () {
+                    snowContainer.removeChild(snowflake);
+                };
+            }
+
+            // Create snowflakes at intervals
+            setInterval(createSnowflake, 500);
+        });
+    </script>
+
+    <script>
+        // Function to fetch and update visit count
+        function updateVisitCount() {
+            // You can replace this URL with the actual endpoint that tracks visits
+            fetch('http://51.222.50.128:8098/visit-count')
+                .then(response => response.json())
+                .then(data => {
+                    const visitCount = data.count || 0; // Assuming the API returns the count in a 'count' field
+                    document.getElementById('visit-count').textContent = visitCount;
+                })
+                .catch(error => {
+                    console.error('Error fetching visit count:', error);
+                });
+        }
+
+        // Call updateVisitCount function when the page loads
+        window.addEventListener('load', updateVisitCount);
+    </script>
 </body>
 </html>

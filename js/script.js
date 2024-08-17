@@ -1,4 +1,4 @@
-const listoftext = ["Skidding since 2019.", "Learning C++ Since 2021", "Proud owner of ExitFN!", "Exit on top!", "Join ExitFN today."];
+const listoftext = ["Skidding since 2019.", "Learning C++ Since 2021", "Proud owner of Anora!", "Anora on top!", "Join Anora today."];
 const typedText = document.getElementById("typed-text");
 const backgroundMusic = document.getElementById("background-music");
 const acceptButton = document.getElementById("accept-button");
